@@ -38,28 +38,28 @@
 		<div id="nav-header" class="header-inner section-inner navbar navbar-light bg-light ">
 
 			<div class="header-titles-wrapper">
-			<?php
+				<?php
 
-// Check whether the header search is activated in the customizer.
-$enable_header_search = get_theme_mod('enable_header_search', true);
+				// Check whether the header search is activated in the customizer.
+				$enable_header_search = get_theme_mod('enable_header_search', true);
 
-if (true === $enable_header_search) {
+				if (true === $enable_header_search) {
 
-?>
+				?>
 
-	<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-		<span class="toggle-inner">
-			<span class="toggle-icon">
-				<?php twentytwenty_the_theme_svg('search'); ?>
-			</span>
-			<span class="toggle-text"><?php _ex('Search', 'toggle text', 'twentytwenty'); ?></span>
-		</span>
-	</button><!-- .search-toggle -->
+					<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+						<span class="toggle-inner">
+							<span class="toggle-icon">
+								<?php twentytwenty_the_theme_svg('search'); ?>
+							</span>
+							<span class="toggle-text"><?php _ex('Search', 'toggle text', 'twentytwenty'); ?></span>
+						</span>
+					</button><!-- .search-toggle -->
 
-<?php } ?>
+				<?php } ?>
 
-				<nav  class="navbar navbar-expand-lg ">
-					
+				<nav class="navbar navbar-expand-lg ">
+
 					<div id="header-logo">
 						<?php
 
@@ -84,14 +84,14 @@ if (true === $enable_header_search) {
 																		?></span>
 									<input id="header-button-search" type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'twentytwenty'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 								</label>
-								<input id="header-button-summit" type="submit" class="search-submit btn" value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>" />
+								<input id="header-button-summit" type="submit" class="search-submit btn" value="<?php echo esc_attr_x('Submit', 'submit button', 'twentytwenty'); ?>" />
 							</form>
 						</ul>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					
+
 				</nav>
 
 			</div>
