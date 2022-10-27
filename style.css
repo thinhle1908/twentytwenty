@@ -1,4 +1,14 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+#header-dropdown {
+	margin: 20px 30px;
+	font-size: 2.4rem;
+}
+#header-dropdown i{
+	color: #555;
+}
+#header-dropdown a{
+	color: #555;
+}
 #header-a a{
 	color: #555;
 	font-weight: 500;

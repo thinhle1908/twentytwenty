@@ -177,7 +177,17 @@
 						<?php
 						}
 						?>
-				
+						<div id="header-dropdown" class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-user-circle-o"></i>
+								<span class="caret">Account </span>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="<?php echo get_admin_url() ?>">admin</a>
+								<a class="dropdown-item" href="<?php echo wp_logout_url() ?>">logout</a>
+							</div>
+						</div>
+
 					</div><!-- .header-toggles -->
 				<?php
 				}
@@ -185,7 +195,9 @@
 
 			</div><!-- .header-navigation-wrapper -->
 
+
 		</div>
+
 		<?php
 		// Output the search modal (if it is activated in the customizer).
 		if (true === $enable_header_search) {
