@@ -72,7 +72,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li id="header-home" class="nav-item active ">
-								<a class="nav-link" href="">
+								<a class="nav-link" href="<?php echo get_home_url() ?>">
 									Home
 									<span class="sr-only">(current)</span>
 								</a>
@@ -103,7 +103,7 @@
 
 					<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x('Horizontal', 'menu', 'twentytwenty'); ?>">
 
-						<ul class="primary-menu reset-list-style">
+						<ul id="header-a" class="primary-menu reset-list-style ">
 
 							<?php
 							if (has_nav_menu('primary')) {
@@ -177,7 +177,7 @@
 						<?php
 						}
 						?>
-
+				
 					</div><!-- .header-toggles -->
 				<?php
 				}
