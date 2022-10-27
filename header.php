@@ -77,8 +77,7 @@
 									<span class="sr-only">(current)</span>
 								</a>
 							</li>
-							<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
-												?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+							<form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
 								<label for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
 									<span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
 																		?></span>
@@ -149,7 +148,7 @@
 
 								<button class="toggle nav-toggle desktop-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 									<span class="toggle-inner">
-										<span class="toggle-text"><?php _e('Menu', 'twentytwenty'); ?></span>
+										<span class="toggle-text "><?php _e('Menu', 'twentytwenty'); ?></span>
 										<span class="toggle-icon">
 											<?php twentytwenty_the_theme_svg('ellipsis'); ?>
 										</span>
