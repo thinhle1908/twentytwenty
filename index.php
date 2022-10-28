@@ -17,7 +17,7 @@
 get_header();
 ?>
 
-<main id="site-content">
+<main id="site-content banner-top1" class="banner-top1-search">
 
 	<?php
 
