@@ -128,8 +128,6 @@ if (comments_open() || pings_open()) {
 
 						<?php
 						$required_indicator = ' <span class="required" aria-hidden="true"></span>';
-						$required_attribute = ( $html5 ? ' required' : ' required="required"' );
-
 						comment_form(
 							array(
 								'logged_in_as' => '',
@@ -147,7 +145,7 @@ if (comments_open() || pings_open()) {
 										_x( '', 'noun' ),
 										$required_indicator
 									),
-									'<textarea id="comment" placeholder="What are you thinking ..." name="comment" cols="" rows="90" maxlength="65525"' . $required_attribute . '></textarea>'
+									'<textarea id="comment" placeholder="What are you thinking ..." name="comment" cols="" rows="90" maxlength="65525"'  . '></textarea>'
 								),
 							)
 						);
