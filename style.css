@@ -6781,3 +6781,28 @@ a.to-the-top > * {
 	font-size: 1.4rem;
 	line-height: 20px;
 }
+
+
+/* Search  */
+.search-ban .col-auto{
+	margin-top: -50px;
+	width: 50px;
+}
+.search-ban .col-auto .fas{
+	font-size: 2rem;
+	margin-top: -30px;
+}
+.search-ban .search-submit{
+	
+    margin-top: -58px;
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    background: rgb(20, 156, 20);
+}
+.search-ban .lb-search input{
+	height: 65px;
+	padding-left: 50px;
+}

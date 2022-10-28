@@ -1,3 +1,7 @@
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+</head>
 <?php
 
 /**
@@ -26,13 +30,14 @@ if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
 ?>
 <form class="search-ban" role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
 										?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-	<div class="col-auto">
-		<i class="fas fa-search h4 text-body"></i>
-	</div>
+
 	<label class="lb-search" for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
 		<span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
 											?></span>
 		<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'twentytwenty'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 	</label>
 	<input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>" />
+	<div class="col-auto">
+		<i class="fas fa-search h4 text-body"></i>
+	</div>
 </form>
