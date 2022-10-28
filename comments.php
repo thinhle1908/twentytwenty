@@ -127,6 +127,9 @@ if (comments_open() || pings_open()) {
 
 
 						<?php
+						$required_indicator = ' <span class="required" aria-hidden="true"></span>';
+						$required_attribute = ( $html5 ? ' required' : ' required="required"' );
+
 						comment_form(
 							array(
 								'logged_in_as' => '',
