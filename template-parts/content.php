@@ -11,57 +11,45 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-$class = '';
-if (!is_single()) {
-	$class = 'danh-sach';
-}
+
 ?>
 
-<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+	<div class="banner-card-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<?php
+					// hình ảnh 
+					if (!is_search()) {
+						get_template_part('template-parts/featured-image');
+					}
+					?>
+				</div>
+				<div class="col-md-9">
+					<?php
+					get_template_part('template-parts/entry-header');
+					?>
+					<div class="post-inner post-content <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+						<div class="entry-content">
+							<?php
+							if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+								the_excerpt();
+							} else {
+								the_content(__('Continue reading', 'twentytwenty'));
+							}
+							?>
 
-	<div class="banner-top1 ">
-		<div class="row row-top1">
-			<div class="col-md-4">
-				<?php
-				if (!is_search()) {
-					//hình ảnh
-					get_template_part('template-parts/featured-image');
-				}
-				?>
-			</div>
-			<div class="col-md-8">
-				<?php get_template_part('template-parts/entry-header'); ?>
-				<div class="post-inner banner-content <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
-					<div class="entry-content">
-						<?php
-						if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
-							the_excerpt();
-						} else {
-							the_content(__('Continue reading', 'twentytwenty'));
-						}
-						?>
+						</div><!-- .entry-content -->
 
-					</div><!-- .entry-content -->
-
-				</div><!-- .post-inner -->
+					</div><!-- .post-inner -->
+				</div>
 			</div>
 		</div>
-
 	</div>
 
-	<?php
-	// tiêu đề
-	//get_template_part( 'template-parts/entry-header' );
 
-	// if ( ! is_search() ) {
-	// 	//hình ảnh
-	// 	get_template_part( 'template-parts/featured-image' );
-	// }
-
-	?>
-
-
-
+	
 
 	<?php
 
