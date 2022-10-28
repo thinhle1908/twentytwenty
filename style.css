@@ -6723,3 +6723,95 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+
+
+
+/* Banner - 2 */
+
+.header-entry-title .entry-categories {
+	width: 100px;
+	margin-left: -50px;
+	margin-top: 30px;
+	/* border-right: 2px solid #000; */
+}
+
+.header-entry-title .entry-categories .category-title a {
+	text-align: left;
+	color: #000;
+    border-bottom: none;
+}
+.entry-title {
+	width: 295px;
+	margin-left: 30px;
+	text-align: left;
+	font-size: 2rem;
+	margin-left: 60px;
+	margin-top: -50px;
+
+	padding-left: 20px;
+	
+}
+.entry-title .title{
+	color: #21759b;
+}
+
+.banner-top1 {
+	background: #21759b;
+}
+
+.danh-sach{
+	display: inline-flex;
+	margin: 0 auto;
+}
+.banner-top1 {
+	width:  750px;
+	height: 100%;
+	background: #fff;
+	margin-left: 380px;
+	display: flex;
+	/* display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	 */
+	 margin-bottom: 30px;
+}
+.banner-content .entry-content{
+	width: 310px;
+	margin-left: 100px;
+    margin-top: -100px;
+    font-size: 1.5rem;
+}
+
+.banner-top1 .row-top1{
+	display: flex;
+}
+.banner-top1 .row-top1 .col-md-4 {
+	width: 380px;
+	margin-left: -39px;
+	margin-top: -60px;
+}
+.banner-top1 .row-top1 .col-md-8 {
+	width: 500px;
+}
+
+/* search */
+.search-ban .lb-search .search-field{
+    height: 70px;
+}
+.search-ban .search-submit{
+	position: absolute;
+	padding: 10px;
+	border-radius:5px;
+	 background: #21759b;
+	right: 495px;
+	top: 475px;
+}
+.search-ban .search-submit{
+	padding-left: 20px;
+}
+.search-ban .col-auto .fas{
+	position: absolute;
+	font-size: 2.5rem;
+	left: 500px;
+	top: 485px;
+}
