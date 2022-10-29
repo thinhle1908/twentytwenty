@@ -1,6 +1,6 @@
+
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
 </head>
 <?php
 
@@ -30,7 +30,6 @@ if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
 ?>
 <form class="search-ban" role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
 										?> method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-
 	<label class="lb-search" for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
 		<span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
 											?></span>

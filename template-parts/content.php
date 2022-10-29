@@ -21,9 +21,9 @@
 				<div class="col-md-3">
 					<?php
 					// hình ảnh 
-					if (!is_search()) {
+					
 						get_template_part('template-parts/featured-image');
-					}
+					
 					?>
 				</div>
 				<div class="col-md-9">
