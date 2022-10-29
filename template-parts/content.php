@@ -39,7 +39,7 @@ $has_sidebar_right_1 = is_active_sidebar('sidebar-right-1');
 			}
 			?>
 
-		</div><!-- .entry-content -->
+						</div><!-- .entry-content -->
 
 		<?php if ($has_sidebar_right_1) { ?>
 			<?php if ($has_sidebar_right_1) { ?>
