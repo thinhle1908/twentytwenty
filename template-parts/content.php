@@ -16,28 +16,30 @@ $has_sidebar_right_1 = is_active_sidebar('sidebar-right-1');
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-	<?php
-
-	get_template_part('template-parts/entry-header');
-
-	if (!is_search()) {
-		get_template_part('template-parts/featured-image');
-	}
-
-	?>
-
-	<div class="post-inner <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> wp-container-8 wp-block-columns">
-
-		<div class="entry-content wp-container-6 wp-block-column" style="flex-basis:66.66%">
-
-			<?php
-			if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
-				the_excerpt();
-			} else {
-				the_content(__('Continue reading', 'twentytwenty'));
-			}
-			?>
+	<div class="banner-card-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<?php
+					// hình ảnh 
+					if (!is_search()) {
+						get_template_part('template-parts/featured-image');
+					}
+					?>
+				</div>
+				<div class="col-md-9">
+					<?php
+					get_template_part('template-parts/entry-header');
+					?>
+					<div class="post-inner post-content <?php echo is_page_template('templates/template-full-width.php') ? '' : 'thin'; ?> ">
+						<div class="entry-content">
+							<?php
+							if (is_search() || !is_singular() && 'summary' === get_theme_mod('blog_content', 'full')) {
+								the_excerpt();
+							} else {
+								the_content(__('Continue reading', 'twentytwenty'));
+							}
+							?>
 
 						</div><!-- .entry-content -->
 
