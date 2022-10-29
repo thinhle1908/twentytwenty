@@ -6735,7 +6735,7 @@ a.to-the-top > * {
 	margin-bottom: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	box-shadow: 3px 3px 2px #AAA;
+	
 }
 /* Img  */
 
@@ -6791,7 +6791,7 @@ a.to-the-top > * {
 	line-height: 20px;
 }
 /* Dương van quang */
-.duongvanquang{
+.day{
 	font-size: 3.1em;
 	line-height: 1em;
 	font-family: 'Prata', serif;
@@ -6830,8 +6830,7 @@ a.to-the-top > * {
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
-.content-detail .banner-card-top .container .row .col-md-9 .banner-antry-header
-.entry-header-inner .row .col-md-8 h1.entry-title{
+.content-detail  .banner-card-top .container .row .col-md-9 .banner-antry-header .entry-header-inner .row .col-md-8 h1.entry-title {
 	font-size: 3.5rem;
     text-align: left;
 	width:490px;
@@ -6909,4 +6908,10 @@ header.entry-header.has-text-align-center.banner-antry-header.banner-detail.head
 }
 .content-detail .banner-antry-header {
     background: #f5efe0;
+}
+.list-catetory{
+	
+}
+.ul-cate ul li a{
+	color:rgb(20, 156, 20);
 }

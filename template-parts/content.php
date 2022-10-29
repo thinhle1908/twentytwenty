@@ -15,6 +15,7 @@
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+	
 	<div class="banner-card-top">
 		<div class="container">
 			<div class="row">
@@ -50,7 +51,7 @@
 
 
 	
-
+	
 	<?php
 
 	if (is_single()) {
@@ -74,5 +75,6 @@
 	<?php
 	}
 	?>
+	
 
 </article><!-- .post -->
