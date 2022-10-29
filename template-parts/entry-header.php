@@ -26,8 +26,10 @@ if (is_singular()) {
 				$post = get_post();
 				$post_day = get_the_date('d',$post->ID);
 				$post_month = get_the_date('m',$post->ID);
-				echo '<div class="duongvanquang">'. $post_day . '</div>';
+				echo '<div class="date">';
+				echo '<div class="duongvanquang">'. $post_day .'</div>';
 				echo "THÁNG " . $post_month;
+				echo '</div>';
 				?>
 
 			</div>
