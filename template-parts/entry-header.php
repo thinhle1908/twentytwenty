@@ -21,30 +21,17 @@ if (is_singular()) {
 	<div class="entry-header-inner section-inner medium">
 
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 testthuthoi">
 				<?php
-				/**
-				 * Allow child themes and plugins to filter the display of the categories in the entry header.
-				 *
-				 * @since Twenty Twenty 1.0
-				 *
-				 * @param bool Whether to show the categories in header. Default true.
-				 */
-				$show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
-
-				if (true === $show_categories && has_category()) {
+				$post = get_post();
+				$post_day = get_the_date('d',$post->ID);
+				$post_month = get_the_date('m',$post->ID);
+				echo '<div class="date">';
+				echo '<div class="duongvanquang">'. $post_day .'</div>';
+				echo "THÁNG " . $post_month;
+				echo '</div>';
 				?>
 
-					<div class="entry-categories">
-						<span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
-						<div class="entry-categories-inner">
-							<?php the_category(' '); ?>
-						</div><!-- .entry-categories-inner -->
-					</div><!-- .entry-categories -->
-
-				<?php
-				}
-				?>
 			</div>
 			<div class="col-md-8">
 				<?php

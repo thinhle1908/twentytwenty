@@ -12,7 +12,6 @@
  * @since Twenty Twenty 1.0
  */
 
-$has_sidebar_right_1 = is_active_sidebar('sidebar-right-1');
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -22,9 +21,9 @@ $has_sidebar_right_1 = is_active_sidebar('sidebar-right-1');
 				<div class="col-md-3">
 					<?php
 					// hình ảnh 
-					if (!is_search()) {
+					
 						get_template_part('template-parts/featured-image');
-					}
+					
 					?>
 				</div>
 				<div class="col-md-9">
@@ -43,40 +42,14 @@ $has_sidebar_right_1 = is_active_sidebar('sidebar-right-1');
 
 						</div><!-- .entry-content -->
 
-		<?php if ($has_sidebar_right_1) { ?>
-			<?php if ($has_sidebar_right_1) { ?>
-				<div class="footer-widgets wp-container-7 wp-block-column" style="flex-basis:22.22%;">
-					<?php dynamic_sidebar('sidebar-right-1'); ?>
+					</div><!-- .post-inner -->
 				</div>
-			<?php } ?>
+			</div>
+		</div>
+	</div>
 
-		<?php } ?>
 
-	</div><!-- .post-inner -->
-
-	<div class="section-inner">
-		<?php
-		wp_link_pages(
-			array(
-				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__('Page', 'twentytwenty') . '"><span class="label">' . __('Pages:', 'twentytwenty') . '</span>',
-				'after'       => '</nav>',
-				'link_before' => '<span class="page-number">',
-				'link_after'  => '</span>',
-			)
-		);
-
-		edit_post_link();
-
-		// Single bottom post meta.
-		twentytwenty_the_post_meta(get_the_ID(), 'single-bottom');
-
-		if (post_type_supports(get_post_type(get_the_ID()), 'author') && is_single()) {
-
-			get_template_part('template-parts/entry-author-bio');
-		}
-		?>
-
-	</div><!-- .section-inner -->
+	
 
 	<?php
 
